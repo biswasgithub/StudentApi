@@ -30,7 +30,7 @@ public class StudentController {
 
 	@Autowired
 	private StudentService service;
-
+	// this is the get request
 	@GetMapping("/getAllStudents")
 	public ResponseEntity<List<StudentEntity>> getStudentList() throws Exception {
 		List<StudentEntity> studentList = service.getStudents();
